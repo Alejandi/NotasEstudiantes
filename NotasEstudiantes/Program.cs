@@ -45,26 +45,17 @@ namespace NotasEstudiantes
 
         public static void escribirPromedioEnCosola(float promedioEstudiante, int numeroEstudiante)
         {
-
             Console.WriteLine($"El promedio del estudiante {numeroEstudiante} es {promedioEstudiante}");
-
         }
-        public static void leerNotasEstudiante (float[] estudiante, int numeroEstudiante)
 
-        { 
-                    
+        public static void leerNotasEstudiante (float[] estudiante, int numeroEstudiante)
+        {
             for (int i = 0; i <= 4; i++)
             {
-            Console.WriteLine($"Digite la nota {i+1} del estudiante {numeroEstudiante}");
+                Console.WriteLine($"Digite la nota {i + 1} del estudiante {numeroEstudiante}");
                 estudiante[i] = float.Parse(Console.ReadLine());
-                         
-        
-           }
-
-            
-
-        }
-       
+            }    
+        }       
     }
 }
 
